@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
   <img 
-    src="./public/resources/__underdev.gif" 
+    src="./client/public/resources/__underdev.png" 
     alt="lab-logo" 
     style="width: 60px; height: 60px; border-radius: 50%;"
   >
