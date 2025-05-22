@@ -1,5 +1,13 @@
 @import 'tailwindcss';
 @import './global.css';
 
+/* FONTS */
+@theme {
+  --font-style: 'Monoton', sans-serif;
+}
+
 /* LOADERS */
 @import './utils/Loader/Loader.styles.css';
+
+/* COMPONENTS */
+@import './components/General/NavigationBar/Navigation.styles.css';

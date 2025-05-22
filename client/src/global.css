@@ -2,3 +2,14 @@
 .BG-BLACK-PRIMARY {
   @apply bg-[#0F0F0F];
 }
+.TEXT-PRIMARY {
+  @apply text-white;
+}
+
+/* UNIVERSAL */
+.FLEX-CENTER {
+  @apply flex items-center justify-center;
+}
+.FLEX-BETWEEN {
+  @apply flex items-center justify-between;
+}
