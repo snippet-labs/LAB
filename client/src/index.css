@@ -1,3 +1,5 @@
-@import "tailwindcss";
-@import "./global.css";
-@import "./colors.css"
+@import 'tailwindcss';
+@import './global.css';
+
+/* LOADERS */
+@import './utils/Loader/Loader.styles.css';
