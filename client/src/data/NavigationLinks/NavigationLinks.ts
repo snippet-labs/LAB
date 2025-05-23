@@ -30,11 +30,6 @@ const NAVIGATION_LINKS: NavigationLinkProps[] = [
         id: 6,
         name: "Team",
         path: "/team"
-    },
-    {
-        id: 7,
-        name: "Contact",
-        path: '/contact-us'
     }
 ];
 

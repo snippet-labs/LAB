@@ -1,8 +1,9 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 // COMPONENTS
-import Loader from './utils/Loader/Loader';
 const Layout = lazy(() => import('./components/Layout/Layout'));
+// UTILS
+import Loader from './utils/Loader/Loader';
 // ICONS
 //STORE
 

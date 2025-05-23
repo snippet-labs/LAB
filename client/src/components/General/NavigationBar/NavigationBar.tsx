@@ -1,18 +1,27 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+// UTILS
+import Logo from '../../../utils/Logo/Logo';
 // DATA
 import NAVIGATION_LINKS from '../../../data/NavigationLinks/NavigationLinks';
 
 const NavigationBar: React.FC = () => {
   return (
-    <div className="w-full h-16 BG-BLACK-PRIMARY FLEX-BETWEEN px-3 py-1">
-      <div className="font-style text-3xl TEXT-PRIMARY">{`{?:}`}</div>
+    <div className="w-full h-[9vh] BG-BLACK-PRIMARY FLEX-BETWEEN PADDING">
+      <Logo className="font-style-logo text-4xl TEXT-COLOR-PRIMARY" />
       <div className="LINKS">
-        <ul className="TEXT-PRIMARY FLEX-CENTER gap-6">
+        <ul className="TEXT-COLOR-PRIMARY FLEX-CENTER gap-6">
           {NAVIGATION_LINKS.map(({ name, path }, id) => (
-            <li key={id}>
-              <NavLink to={path}>{name}</NavLink>
+            <li key={id} className="GRAY-300 TEXT-COLOR-PRIMARY-HOVER">
+              <NavLink
+                to={path}
+                className={({ isActive }) =>
+                  isActive ? 'LINKS-ACTIVE BG-WHITE-PRIMARY' : ''
+                }
+              >
+                {name}
+              </NavLink>
             </li>
           ))}
         </ul>

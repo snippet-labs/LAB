@@ -2,8 +2,21 @@
 .BG-BLACK-PRIMARY {
   @apply bg-[#0F0F0F];
 }
-.TEXT-PRIMARY {
+.BG-WHITE-PRIMARY {
+  @apply bg-white;
+}
+.BG-WHITE-SECONDARY {
+  @apply bg-white/80;
+}
+
+.TEXT-COLOR-PRIMARY {
   @apply text-white;
+}
+.TEXT-COLOR-PRIMARY-HOVER {
+  @apply hover:text-white;
+}
+.GRAY-300 {
+  @apply text-gray-300;
 }
 
 /* UNIVERSAL */
@@ -12,4 +25,8 @@
 }
 .FLEX-BETWEEN {
   @apply flex items-center justify-between;
+}
+
+.PADDING {
+  @apply px-5;
 }

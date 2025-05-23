@@ -1,3 +1,6 @@
 .LINKS {
-  @apply border-1 border-white rounded-md px-3 py-2;
+  @apply rounded-2xl bg-white/20 shadow-lg ring-2 ring-black/10 px-3 py-4;
+}
+.LINKS-ACTIVE {
+  @apply  text-black rounded-xl shadow-lg border-1 p-3;
 }
