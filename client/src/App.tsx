@@ -16,7 +16,7 @@ const Content: React.FC = () => {
     setIsLoading(true);
     const loadingTime = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(loadingTime);
   }, [location.pathname]);

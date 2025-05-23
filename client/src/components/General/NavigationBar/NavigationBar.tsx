@@ -9,12 +9,12 @@ import NAVIGATION_LINKS from '../../../data/NavigationLinks/NavigationLinks';
 const NavigationBar: React.FC = () => {
   return (
     <div className="w-full h-[9vh] BG-BLACK-PRIMARY FLEX-BETWEEN PADDING">
-      <Logo className="font-style-logo text-4xl TEXT-COLOR-PRIMARY" />
-      <div className="FLEX-CENTER gap-4">
+      <Logo className="font-style-logo text-4xl TEXT-WHITE-PRIMARY" />
+      <div className="RESPONSIVE-CENTER-BLOCK gap-4">
         <div className="LINKS">
           <ul className="TEXT-COLOR-PRIMARY FLEX-CENTER gap-6">
             {NAVIGATION_LINKS.map(({ name, path }, id) => (
-              <li key={id} className="GRAY-300 TEXT-COLOR-PRIMARY-HOVER">
+              <li key={id} className="GRAY-300 TEXT-WHITE-PRIMARY-HOVER">
                 <NavLink
                   to={path}
                   className={({ isActive }) =>

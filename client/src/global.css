@@ -10,10 +10,10 @@
 }
 
 /* COLORS */
-.TEXT-COLOR-PRIMARY {
+.TEXT-WHITE-PRIMARY {
   @apply text-white;
 }
-.TEXT-COLOR-PRIMARY-HOVER {
+.TEXT-WHITE-PRIMARY-HOVER {
   @apply hover:text-white;
 }
 .TEXT-BLACK-PRIMARY {
@@ -37,4 +37,9 @@
 
 .POINTER {
   @apply hover:cursor-pointer;
+}
+
+/* RESPONSIVE */
+.RESPONSIVE-CENTER-BLOCK {
+  @apply hidden lg:flex items-center justify-center;
 }
