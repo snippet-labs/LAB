@@ -1,4 +1,4 @@
-/* COLORS */
+/* BACKGROUND */
 .BG-BLACK-PRIMARY {
   @apply bg-[#0F0F0F];
 }
@@ -9,11 +9,15 @@
   @apply bg-white/80;
 }
 
+/* COLORS */
 .TEXT-COLOR-PRIMARY {
   @apply text-white;
 }
 .TEXT-COLOR-PRIMARY-HOVER {
   @apply hover:text-white;
+}
+.TEXT-BLACK-PRIMARY {
+  @apply text-black;
 }
 .GRAY-300 {
   @apply text-gray-300;
@@ -29,4 +33,8 @@
 
 .PADDING {
   @apply px-5;
+}
+
+.POINTER {
+  @apply hover:cursor-pointer;
 }

@@ -2,5 +2,9 @@
   @apply rounded-2xl bg-white/20 shadow-lg ring-2 ring-black/10 px-3 py-4;
 }
 .LINKS-ACTIVE {
-  @apply  text-black rounded-xl shadow-lg border-1 p-3;
+  @apply text-black rounded-xl shadow-lg border-1 p-3;
+}
+
+.BUTTON {
+  @apply rounded-2xl bg-white shadow-lg ring-2 px-4 py-4;
 }
