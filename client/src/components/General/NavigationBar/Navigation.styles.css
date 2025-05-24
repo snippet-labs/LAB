@@ -1,10 +1,15 @@
-.LINKS {
+/* Desktop and Mobile Navigation links */
+.DESKTOP-LINKS {
   @apply font-semibold rounded-2xl bg-white/20 shadow-lg ring-2 ring-black/10 px-3 py-4;
 }
-.LINKS-ACTIVE {
+.DESKTOP-LINKS-ACTIVE {
   @apply text-black rounded-xl shadow-lg border-1 p-3;
 }
+.MOBILE-LINKS {
+  @apply font-semibold rounded-xl bg-white/20 shadow-lg ring-2 ring-black/10 p-3;
+}
 
+/* Button */
 .BUTTON {
   @apply font-semibold rounded-2xl bg-white shadow-lg ring-2 px-4 py-4;
 }
