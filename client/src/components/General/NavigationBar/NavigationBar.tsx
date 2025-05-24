@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 // UTILS
 import Logo from '../../../utils/Logo/Logo';
@@ -27,7 +27,9 @@ const NavigationBar: React.FC = () => {
             ))}
           </ul>
         </div>
-        <div className="TEXT-BLACK-PRIMARY BUTTON POINTER">Contract</div>
+        <Link to="/contact-us" className="TEXT-BLACK-PRIMARY BUTTON POINTER">
+          Contract
+        </Link>
       </div>
     </div>
   );
