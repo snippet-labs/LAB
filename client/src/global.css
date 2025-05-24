@@ -1,0 +1,107 @@
+/* BACKGROUND */
+.BG-BLACK-PRIMARY {
+  @apply bg-[#0F0F0F];
+}
+.BG-WHITE-PRIMARY {
+  @apply bg-white;
+}
+.BG-WHITE-SECONDARY {
+  @apply bg-white/80;
+}
+
+/* COLORS */
+.TEXT-WHITE-PRIMARY {
+  @apply text-white;
+}
+.TEXT-WHITE-PRIMARY-HOVER {
+  @apply hover:text-white;
+}
+.WHITE-20 {
+  @apply bg-white/20;
+}
+.WHITE-20-HOVER {
+  @apply hover:bg-white/20;
+}
+.TEXT-BLACK-PRIMARY {
+  @apply text-black;
+}
+.GRAY-300 {
+  @apply text-gray-300;
+}
+
+/* FONT */
+.SEMIBOLD {
+  @apply font-semibold;
+}
+
+/* UNIVERSAL */
+.ABSOLUTE {
+  @apply absolute;
+}
+.FIXED {
+  @apply fixed;
+}
+.FULL {
+  @apply w-full;
+}
+.BLOCK {
+  @apply block;
+}
+
+/* POSITION */
+.T0 {
+  @apply top-0;
+}
+.R0 {
+  @apply right-0;
+}
+
+/* FLEX */
+.FLEX-CENTER {
+  @apply flex items-center justify-center;
+}
+.FLEX-CENTER-LG {
+  @apply lg:flex items-center justify-center;
+}
+.FLEX-BETWEEN {
+  @apply flex items-center justify-between;
+}
+.FLEX-END {
+  @apply flex items-center justify-end;
+}
+
+/* ALIGNMENT */
+.CENTER {
+  @apply text-center;
+}
+
+/* PADDING */
+.PADDING {
+  @apply px-5;
+}
+
+/* HOVER */
+.POINTER {
+  @apply hover:cursor-pointer;
+}
+
+/* EASE MOTION */
+.EASE {
+  @apply ease-in-out;
+}
+
+/* DURATION */
+.D-300 {
+  @apply duration-300;
+}
+
+/* TRANSITION */
+.TRANSFORM {
+  @apply transition-transform;
+}
+.COLORS {
+  @apply transition-colors;
+}
+.ALL {
+  @apply transition-all;
+}

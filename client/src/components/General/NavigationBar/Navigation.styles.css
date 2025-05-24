@@ -1,0 +1,23 @@
+/* Desktop and Mobile Navigation links */
+.DESKTOP-LINKS {
+  @apply font-semibold rounded-2xl bg-white/20 shadow-lg ring-2 ring-black/10 px-3 py-4;
+}
+.DESKTOP-LINKS-ACTIVE {
+  @apply text-black rounded-xl shadow-lg border-1 p-3;
+}
+.MOBILE-LINKS {
+  @apply font-semibold rounded-xl bg-white/20 shadow-lg ring-2 ring-black/10 p-2;
+}
+.MOBILE-LINKS-HOVER {
+  @apply font-semibold rounded-xl hover:bg-white/20 hover:shadow-lg hover:ring-2 hover:ring-black/10 p-2;
+}
+
+/* Button */
+.BUTTON {
+  @apply font-semibold rounded-2xl bg-white shadow-lg ring-2 px-4 py-4;
+}
+
+/* Border */
+.BORDER-LEFT-CORNER-3XL {
+  @apply border-l-3 border-white rounded-l-2xl;
+}
