@@ -4,7 +4,7 @@ const NAVIGATION_LINKS: NavigationLinkProps[] = [
     {
         id: 1,
         name: "Home",
-        path: "/home"
+        path: "/"
     },
     {
         id: 2,
