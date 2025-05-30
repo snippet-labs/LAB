@@ -48,18 +48,6 @@
 }
 
 /* UNIVERSAL */
-.ABSOLUTE {
-  @apply absolute;
-}
-.FIXED {
-  @apply fixed;
-}
-.FULL {
-  @apply w-full;
-}
-.SCREEN {
-  @apply h-screen;
-}
 .BLOCK {
   @apply block;
 }
@@ -70,6 +58,15 @@
 }
 .R0 {
   @apply right-0;
+}
+.ABSOLUTE {
+  @apply absolute;
+}
+.FIXED {
+  @apply fixed;
+}
+.STICKY {
+  @apply sticky;
 }
 
 /* FLEX */
@@ -85,10 +82,35 @@
 .FLEX-END {
   @apply flex items-center justify-end;
 }
+.FLEX-START {
+  @apply flex items-center justify-start;
+}
+
+/* GAP */
+.G2 {
+  @apply gap-2;
+}
+.G4 {
+  @apply gap-4;
+}
+.G6 {
+  @apply gap-6;
+}
 
 /* ALIGNMENT */
 .CENTER {
   @apply text-center;
+}
+
+/* HEIGHT&WIDTH */
+.FULL {
+  @apply w-full;
+}
+.SCREEN {
+  @apply h-screen;
+}
+.HNAV {
+  @apply h-[10vh];
 }
 
 /* PADDING */
