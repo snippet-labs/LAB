@@ -20,6 +20,7 @@ const Home: React.FC = () => {
       <Client />
       <Product />
       <Team />
+      {/* Footer & action buttons come here */}
     </div>
   );
 };
