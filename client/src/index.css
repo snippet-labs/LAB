@@ -2,8 +2,9 @@
 @import './global.css';
 
 /* FONTS */
-@theme {
-  --font-style-logo: 'Monoton', sans-serif;
+@font-face {
+  font-family: 'Monoton';
+  src: url('./fonts/Monoton.ttf') format('ttf');
 }
 
 /* LOADERS */

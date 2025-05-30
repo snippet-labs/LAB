@@ -1,3 +1,12 @@
+.LOGO {
+  font-family: 'Monoton';
+}
+
+/* CONTAINER */
+.CONTAINER {
+  @apply pt-10 md:pt-25 lg:pt-30 px-4 mx-auto lg:px-8 xl:max-w-6xl;
+}
+
 /* BACKGROUND */
 .BG-BLACK-PRIMARY {
   @apply bg-[#0F0F0F];
@@ -29,21 +38,16 @@
   @apply text-gray-300;
 }
 
-/* FONT */
+/* TYPOGRAPHY */
 .SEMIBOLD {
   @apply font-semibold;
 }
+.TITLE {
+  font-family: 'Monoton';
+  @apply text-5xl text-white;
+}
 
 /* UNIVERSAL */
-.ABSOLUTE {
-  @apply absolute;
-}
-.FIXED {
-  @apply fixed;
-}
-.FULL {
-  @apply w-full;
-}
 .BLOCK {
   @apply block;
 }
@@ -54,6 +58,15 @@
 }
 .R0 {
   @apply right-0;
+}
+.ABSOLUTE {
+  @apply absolute;
+}
+.FIXED {
+  @apply fixed;
+}
+.STICKY {
+  @apply sticky;
 }
 
 /* FLEX */
@@ -69,15 +82,43 @@
 .FLEX-END {
   @apply flex items-center justify-end;
 }
+.FLEX-START {
+  @apply flex items-center justify-start;
+}
+
+/* GAP */
+.G2 {
+  @apply gap-2;
+}
+.G4 {
+  @apply gap-4;
+}
+.G6 {
+  @apply gap-6;
+}
 
 /* ALIGNMENT */
 .CENTER {
   @apply text-center;
 }
 
+/* HEIGHT&WIDTH */
+.FULL {
+  @apply w-full;
+}
+.SCREEN {
+  @apply h-screen;
+}
+.HNAV {
+  @apply h-[10vh];
+}
+
 /* PADDING */
 .PADDING {
   @apply px-5;
+}
+.PTOP {
+  @apply pt-2;
 }
 
 /* HOVER */

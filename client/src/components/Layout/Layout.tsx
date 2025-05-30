@@ -1,22 +1,10 @@
-import React, { Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
-
-// COMPONENTS
-import NavigationBar from '../General/NavigationBar/NavigationBar';
-import Footer from '../General/Footer/Footer';
-// UTILS
-import Loader from '../../utils/Loader/Loader';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 const Layout: React.FC = () => {
   return (
-    <div>
-      <NavigationBar />
-      <Suspense fallback={<Loader />}>
-        <Routes>
-          <Route path="/" element={<></>} />
-        </Routes>
-      </Suspense>
-      <Footer />
+    <div className="BG-BLACK-PRIMARY">
+      <Outlet />
     </div>
   );
 };
