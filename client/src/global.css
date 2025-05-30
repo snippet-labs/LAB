@@ -1,3 +1,7 @@
+.CONTAINER {
+  @apply pt-35 px-4 mx-auto lg:px-8 xl:max-w-6xl;
+}
+
 /* BACKGROUND */
 .BG-BLACK-PRIMARY {
   @apply bg-[#0F0F0F];
