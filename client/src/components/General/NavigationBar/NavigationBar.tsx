@@ -24,7 +24,7 @@ const NavigationBar: React.FC = () => {
   return (
     <>
       {/* Sticky Navigation Bar */}
-      <div className="STICKY T0 z-50 FULL HNAV BG-BLACK-PRIMARY FLEX-BETWEEN PADDING">
+      <div className="STICKY PTOP T0 z-50 FULL HNAV BG-BLACK-PRIMARY FLEX-BETWEEN PADDING">
         <Logo className="LOGO text-4xl TEXT-WHITE-PRIMARY" />
         {/* Desktop Navigation Bar */}
         <div className="hidden FLEX-CENTER-LG G4">

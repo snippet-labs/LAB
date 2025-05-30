@@ -3,9 +3,14 @@ import { Link } from 'react-router-dom';
 
 const Contact: React.FC = () => {
   return (
-    <div>
-      <Link to="/">Home</Link>
-    </div>
+    <section className="CONTAINER">
+      <div className="SCREEN PTOP">
+        <h2 className="TITLE">CONTACT US</h2>
+        <Link to="/" className="text-white">
+          HOME
+        </Link>
+      </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@
 
 /* CONTAINER */
 .CONTAINER {
-  @apply pt-35 px-4 mx-auto lg:px-8 xl:max-w-6xl;
+  @apply pt-10 md:pt-25 lg:pt-30 px-4 mx-auto lg:px-8 xl:max-w-6xl;
 }
 
 /* BACKGROUND */
@@ -44,7 +44,7 @@
 }
 .TITLE {
   font-family: 'Monoton';
-  @apply text-5xl;
+  @apply text-5xl text-white;
 }
 
 /* UNIVERSAL */
@@ -116,6 +116,9 @@
 /* PADDING */
 .PADDING {
   @apply px-5;
+}
+.PTOP {
+  @apply pt-2;
 }
 
 /* HOVER */
