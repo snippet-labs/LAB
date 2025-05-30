@@ -16,7 +16,6 @@ const Layout: React.FC = () => {
           <Route path="/" element={<></>} />
         </Routes>
       </Suspense>
-
       <Footer />
     </div>
   );
