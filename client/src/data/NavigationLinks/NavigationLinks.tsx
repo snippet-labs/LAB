@@ -30,13 +30,13 @@ const NAVIGATION_LINKS: NavigationLinkProps[] = [
   {
     id: 4,
     name: 'Client',
-    path: 'clients',
+    path: 'client',
     icon: <IoMdGlobe size={20} />,
   },
   {
     id: 5,
     name: 'Products',
-    path: 'products',
+    path: 'product',
     icon: <AiFillProduct size={20} />,
   },
   {
