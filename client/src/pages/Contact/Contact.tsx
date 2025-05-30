@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
     <section className="CONTAINER">
       <div className="SCREEN PTOP">
         <h2 className="TITLE">CONTACT US</h2>
-        <Link to="/" className="text-white">
+        <Link to="/" className="GRAY-300 PTOP">
           HOME
         </Link>
       </div>
