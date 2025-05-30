@@ -1,3 +1,8 @@
+.LOGO {
+  font-family: 'Monoton';
+}
+
+/* CONTAINER */
 .CONTAINER {
   @apply pt-35 px-4 mx-auto lg:px-8 xl:max-w-6xl;
 }
@@ -33,9 +38,13 @@
   @apply text-gray-300;
 }
 
-/* FONT */
+/* TYPOGRAPHY */
 .SEMIBOLD {
   @apply font-semibold;
+}
+.TITLE {
+  font-family: 'Monoton';
+  @apply text-5xl;
 }
 
 /* UNIVERSAL */
@@ -47,6 +56,9 @@
 }
 .FULL {
   @apply w-full;
+}
+.SCREEN {
+  @apply h-screen;
 }
 .BLOCK {
   @apply block;
