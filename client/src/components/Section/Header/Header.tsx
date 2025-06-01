@@ -76,14 +76,14 @@ const HeaderSection: React.FC = () => {
       >
         <div>
           <h2 className="max-w-3xl CENTER FLEX COL">
-            <span className="text-5xl md:text-[5rem] lg:text-[6rem] font-bold text-white ALL">
+            <span className="text-5xl md:text-[5rem] lg:text-[6rem] font-bold TEXT-WHITE-PRIMARY ALL">
               SNIPPETLABS
             </span>
             <span className="GRADIENT font-semibold text-xl md:text-[1.5rem] lg:text-[2.5rem] ALL">
               From our labs for your dreams
             </span>
             <span className="m-auto">
-              <IoIosArrowDropdownCircle className="text-white mt-[5rem] text-3xl md:text-4xl lg:text-5xl  ALL animate-bounce" />
+              <IoIosArrowDropdownCircle className="TEXT-WHITE-PRIMARY mt-[5rem] text-3xl md:text-4xl lg:text-5xl ALL animate-bounce" />
             </span>
           </h2>
         </div>
