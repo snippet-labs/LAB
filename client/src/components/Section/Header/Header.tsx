@@ -53,22 +53,23 @@ const HeaderSection: React.FC = () => {
 
   return (
     <section
+      id="home"
       ref={sectionRef}
-      className="relative w-full h-screen bg-black flex flex-col items-center justify-center overflow-hidden"
+      className="CONTAINER relative FULL SCREEN BG-BLACK-PRIMARY FLEX-CENTER flex-col overflow-hidden"
     >
       <div
         ref={logoRef}
         className="absolute inset-0 flex items-center justify-center"
       >
-        <div className="text-center text-white font-bold text-8xl md:text-9xl lg:text-10xl transform scale-150 transition-all">
-          {`{?:}`}
+        <div className="text-center text-white transform scale-150 ALL">
+          <span className="LOGO text-6xl md:text-[6rem] lg:text-[7rem]">{`{?:}`}</span>
         </div>
       </div>
       <div
         ref={taglineRef}
-        className="absolute inset-0 flex items-center justify-center opacity-0 transform translate-y-16"
+        className="absolute inset-0 FLEX-CENTER opacity-0 transform translate-y-16"
       >
-        <h2 className=" max-w-3xl text-center leading-tight flex flex-col">
+        <h2 className=" max-w-3xl CENTER leading-tight flex flex-col">
           <span className="text-5xl md:text-4xl lg:text-6xl font-bold text-white">
             SNIPPETLABS
           </span>
