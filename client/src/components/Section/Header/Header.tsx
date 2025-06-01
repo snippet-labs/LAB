@@ -3,6 +3,9 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+// ICONS
+import { IoIosArrowDropdownCircle } from 'react-icons/io';
+
 // REGISTER
 gsap.registerPlugin(ScrollTrigger);
 

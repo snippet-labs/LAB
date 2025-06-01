@@ -114,7 +114,7 @@ const NavigationBar: React.FC = () => {
             <Link
               to="/contactus"
               onClick={handleCloseSidebar}
-              className="BLOCK FULL CENTER TEXT-BLACK-PRIMARY BUTTON POINTER TRANSFROM D-300 hover:scale-105"
+              className="BLOCK FULL CENTER text-white  BUTTON POINTER TRANSFROM D-300 hover:scale-105"
             >
               Contact
             </Link>
