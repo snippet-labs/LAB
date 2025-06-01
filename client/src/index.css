@@ -12,3 +12,6 @@
 
 /* COMPONENTS */
 @import './components/General/NavigationBar/Navigation.styles.css';
+
+/* SECTIONS */
+@import './components/Section/About/Aboutus.style.css';
