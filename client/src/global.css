@@ -44,7 +44,7 @@
 }
 .TITLE {
   font-family: 'Monoton';
-  @apply text-5xl text-white;
+  @apply text-4xl md:text-5xl lg:text-6xl text-white;
 }
 
 /* UNIVERSAL */
@@ -70,6 +70,9 @@
 }
 
 /* FLEX */
+.FLEX {
+  @apply flex;
+}
 .FLEX-CENTER {
   @apply flex items-center justify-center;
 }
@@ -84,6 +87,9 @@
 }
 .FLEX-START {
   @apply flex items-center justify-start;
+}
+.COL {
+  @apply flex-col;
 }
 
 /* GAP */
@@ -145,4 +151,9 @@
 }
 .ALL {
   @apply transition-all;
+}
+
+/* GRADIENT */
+.GRADIENT {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500;
 }

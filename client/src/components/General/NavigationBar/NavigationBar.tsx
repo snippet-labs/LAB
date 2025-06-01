@@ -35,7 +35,7 @@ const NavigationBar: React.FC = () => {
                   <a
                     href={`#${path}`}
                     onClick={handleScrollTo(path)}
-                    className={`FLEX-CENTER DESKTOP-LINKS-LINK G2 ${activeLink === path ? 'DESKTOP-LINKS-ACTIVE' : ''}`}
+                    className={`FLEX-CENTER DESKTOP-LINKS-LINK G2  ${activeLink === path ? 'DESKTOP-LINKS-ACTIVE' : ''}`}
                   >
                     {icon}
                     {name}

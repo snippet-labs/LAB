@@ -6,7 +6,9 @@
   font-family: 'Monoton';
   src: url('./fonts/Monoton.ttf') format('ttf');
 }
-
+.FONT {
+  @apply font-mono;
+}
 /* LOADERS */
 @import './utils/Loader/Loader.styles.css';
 

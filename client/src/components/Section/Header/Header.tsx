@@ -1,17 +1,22 @@
 import React, { useEffect, useRef } from 'react';
+// GSAP
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+// REGISTER
 gsap.registerPlugin(ScrollTrigger);
 
 const HeaderSection: React.FC = () => {
+  // STATES
   const sectionRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLDivElement>(null);
   const taglineRef = useRef<HTMLDivElement>(null);
 
+  // EFFECTS
   useEffect(() => {
     if (!sectionRef.current || !logoRef.current || !taglineRef.current) return;
 
+    // GSAP:TIMELINE
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
@@ -55,25 +60,22 @@ const HeaderSection: React.FC = () => {
     <section
       id="home"
       ref={sectionRef}
-      className="CONTAINER relative FULL SCREEN BG-BLACK-PRIMARY FLEX-CENTER flex-col overflow-hidden"
+      className="CONTAINER relative FULL SCREEN BG-BLACK-PRIMARY FLEX-CENTER COL overflow-hidden"
     >
-      <div
-        ref={logoRef}
-        className="absolute inset-0 flex items-center justify-center"
-      >
-        <div className="text-center text-white transform scale-150 ALL">
-          <span className="LOGO text-6xl md:text-[6rem] lg:text-[7rem]">{`{?:}`}</span>
+      <div ref={logoRef} className="absolute inset-0 FLEX-CENTER">
+        <div className="CENTER transform scale-150 ALL">
+          <span className="LOGO GRADIENT text-6xl md:text-[6rem] lg:text-[7rem] ">{`{?:}`}</span>
         </div>
       </div>
       <div
         ref={taglineRef}
         className="absolute inset-0 FLEX-CENTER opacity-0 transform translate-y-16"
       >
-        <h2 className=" max-w-3xl CENTER leading-tight flex flex-col">
-          <span className="text-5xl md:text-4xl lg:text-6xl font-bold text-white">
+        <h2 className="max-w-3xl CENTER FLEX COL">
+          <span className="text-5xl md:text-[5rem] lg:text-[6rem] font-bold text-white">
             SNIPPETLABS
           </span>
-          <span className="text-lime-300 font-semibold text-2xl md:text-3xl lg:text-4xl font-mono">
+          <span className="GRADIENT font-semibold text-xl md:text-[1.5rem] lg:text-[2.5rem]">
             From our labs for your dreams
           </span>
         </h2>

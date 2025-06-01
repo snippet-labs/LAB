@@ -4,7 +4,7 @@ const Product: React.FC = () => {
   return (
     <section id="product" className="CONTAINER">
       <div className="SCREEN">
-        <h2 className="TITLE">PRODUCT</h2>
+        <h2 className="TITLE GRADIENT">PRODUCT</h2>
       </div>
     </section>
   );
