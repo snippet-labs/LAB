@@ -9,6 +9,7 @@
 .FONT {
   @apply font-mono;
 }
+
 /* LOADERS */
 @import './utils/Loader/Loader.styles.css';
 

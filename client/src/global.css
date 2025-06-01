@@ -4,7 +4,7 @@
 
 /* CONTAINER */
 .CONTAINER {
-  @apply pt-10 md:pt-25 lg:pt-30 px-4 mx-auto lg:px-8 xl:max-w-6xl;
+  @apply pt-10 md:pt-25 lg:pt-30 px-5 mx-auto lg:px-8 xl:max-w-6xl;
 }
 
 /* BACKGROUND */
