@@ -74,14 +74,19 @@ const HeaderSection: React.FC = () => {
         ref={taglineRef}
         className="absolute inset-0 FLEX-CENTER opacity-0 transform translate-y-16"
       >
-        <h2 className="max-w-3xl CENTER FLEX COL">
-          <span className="text-5xl md:text-[5rem] lg:text-[6rem] font-bold text-white">
-            SNIPPETLABS
-          </span>
-          <span className="GRADIENT font-semibold text-xl md:text-[1.5rem] lg:text-[2.5rem]">
-            From our labs for your dreams
-          </span>
-        </h2>
+        <div>
+          <h2 className="max-w-3xl CENTER FLEX COL">
+            <span className="text-5xl md:text-[5rem] lg:text-[6rem] font-bold text-white ALL">
+              SNIPPETLABS
+            </span>
+            <span className="GRADIENT font-semibold text-xl md:text-[1.5rem] lg:text-[2.5rem] ALL">
+              From our labs for your dreams
+            </span>
+            <span className="m-auto">
+              <IoIosArrowDropdownCircle className="text-white mt-[5rem] text-3xl md:text-4xl lg:text-5xl  ALL animate-bounce" />
+            </span>
+          </h2>
+        </div>
       </div>
     </section>
   );
