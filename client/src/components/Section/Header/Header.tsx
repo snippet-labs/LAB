@@ -69,10 +69,10 @@ const HeaderSection: React.FC = () => {
         className="absolute inset-0 flex items-center justify-center opacity-0 transform translate-y-16"
       >
         <h2 className=" max-w-3xl text-center leading-tight flex flex-col">
-          <span className="text-5xl md:text-6xl lg:text-7xl font-semibold text-gray-800">
+          <span className="text-5xl md:text-4xl lg:text-6xl font-bold text-white">
             SNIPPETLABS
           </span>
-          <span className="text-green-500 text-semibold text-2xl md:text-3xl lg:text-4xl">
+          <span className="text-lime-300 font-semibold text-2xl md:text-3xl lg:text-4xl font-mono">
             From our labs for your dreams
           </span>
         </h2>
