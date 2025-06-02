@@ -4,6 +4,7 @@ type CustomLinkProps = {
     icon?: React.ReactNode,
     linkClass?: string,
     buttonClass?: string,
+    textClass?: string,
 }
 
 export type { CustomLinkProps };
