@@ -1,5 +1,6 @@
 import React from "react";
 import CustomLink from "../../../utils/Link/CustomLink";
+import { BiMessageSquareDetail } from "react-icons/bi";
 
 // --- Main About Us Component ---
 const About: React.FC = () => {
@@ -30,7 +31,13 @@ const About: React.FC = () => {
             </p>
           </div>
 
-          < CustomLink to={_contactUsPath} name="Contact Us" />
+          <CustomLink
+            to={_contactUsPath}
+            name="Contact Us"
+            icon={<BiMessageSquareDetail className='text-2xl' />}
+            linkClass="sm:sticky bottom-6 right-6
+                    w-auto pt-10 px-10 sm:p-0
+                    FLEX-END" />
         </div>
       </section>
     </>
