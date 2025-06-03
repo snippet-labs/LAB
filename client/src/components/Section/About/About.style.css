@@ -1,5 +1,5 @@
 .ABOUTUS-PARAGRAPH {
-    @apply text-lg text-gray-300 leading-relaxed mt-4 text-left sm:text-justify;
+    @apply text-lg text-gray-300 leading-relaxed mt-4 text-justify;
 }
 
 .ABOUTUS-HIGHLIGHT {
