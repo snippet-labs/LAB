@@ -1,4 +1,4 @@
-type CustomLinkProps = {
+export type CustomLinkProps = {
     to: string,
     name?: string,
     icon?: React.ReactNode,
@@ -6,5 +6,3 @@ type CustomLinkProps = {
     buttonClass?: string,
     textClass?: string,
 }
-
-export type { CustomLinkProps };
