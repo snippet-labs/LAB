@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import Contact from './pages/Contact/Contact';
+import ErrorPage from './pages/Error/Error'
 // HOOKS
 import useRouterLoader from './hooks/useRouterLoader';
 // UTILS
@@ -22,6 +23,7 @@ const AppRoute: React.FC = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="contactus" element={<Contact />} />
+        <Route path="/*" element={<ErrorPage/>}></Route>
       </Route>
     </Routes>
   );
