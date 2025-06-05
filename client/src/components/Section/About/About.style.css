@@ -1,0 +1,7 @@
+.ABOUTUS-PARAGRAPH {
+    @apply text-lg text-gray-300 leading-relaxed mt-4 text-justify;
+}
+
+.ABOUTUS-HIGHLIGHT {
+    @apply text-white font-semibold;
+}

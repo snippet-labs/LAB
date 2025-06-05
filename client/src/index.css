@@ -15,3 +15,6 @@
 
 /* COMPONENTS */
 @import './components/General/NavigationBar/Navigation.styles.css';
+
+/* SECTIONS */
+@import './components/Section/About/About.style.css';
