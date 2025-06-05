@@ -4,7 +4,7 @@ const Client: React.FC = () => {
   return (
     <section id="client" className="CONTAINER">
       <div className="SCREEN">
-        <h2 className="TITLE">CLIENT</h2>
+        <h2 className="TITLE GRADIENT">CLIENT</h2>
       </div>
     </section>
   );

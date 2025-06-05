@@ -35,7 +35,7 @@ const NavigationBar: React.FC = () => {
                   <a
                     href={`#${path}`}
                     onClick={handleScrollTo(path)}
-                    className={`FLEX-CENTER DESKTOP-LINKS-LINK G2 ${activeLink === path ? 'DESKTOP-LINKS-ACTIVE' : ''}`}
+                    className={`FLEX-CENTER DESKTOP-LINKS-LINK G2  ${activeLink === path ? 'DESKTOP-LINKS-ACTIVE' : ''}`}
                   >
                     {icon}
                     {name}
@@ -114,7 +114,7 @@ const NavigationBar: React.FC = () => {
             <Link
               to="/contactus"
               onClick={handleCloseSidebar}
-              className="BLOCK FULL CENTER TEXT-BLACK-PRIMARY BUTTON POINTER TRANSFROM D-300 hover:scale-105"
+              className="BLOCK FULL CENTER TEXT-WHITE-PRIMARY BUTTON POINTER TRANSFROM D-300 hover:scale-105"
             >
               Contact
             </Link>
