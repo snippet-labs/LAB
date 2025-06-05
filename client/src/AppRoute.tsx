@@ -23,7 +23,7 @@ const AppRoute: React.FC = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="contactus" element={<Contact />} />
-        <Route path="*" element={<ErrorPage/>}></Route>
+        <Route path="/*" element={<ErrorPage/>}></Route>
       </Route>
     </Routes>
   );
