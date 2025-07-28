@@ -14,6 +14,15 @@ const HomePage = () => {
           description="From our labs for your dreams"
         />
       </section>
+      <section id="knowus">
+        <Background title="KNOW OUR COMPANY" />
+      </section>
+      <section id="technology">
+        <Background title="TECHNOLOGY STACK" />
+      </section>
+      <section id="motto">
+        <Background title="OUR MOTTO" />
+      </section>
     </>
   );
 };
