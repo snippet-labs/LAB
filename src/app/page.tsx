@@ -2,7 +2,7 @@
 'use client';
 
 const HomePage = () => {
-  return <div>Homepage | Lab</div>;
+  return <div className="h-[120vh] bg-black"></div>;
 };
 
 export default HomePage;
