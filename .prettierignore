@@ -1,0 +1,19 @@
+# NODE_MODULES
+node_modules/
+
+# BUILD_OUTPUTS
+build/
+dist/
+
+# TEST_COVERAGE
+coverage/
+
+# MISC
+.DS_Store
+.env*
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+bun.lockb
+bun.lock
