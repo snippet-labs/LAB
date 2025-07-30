@@ -1,3 +1,3 @@
 export interface ButtonTypes {
-    title?: string;
+    title: string;
 }
