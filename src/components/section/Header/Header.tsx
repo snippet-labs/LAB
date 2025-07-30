@@ -1,10 +1,13 @@
 'use client';
 
+// Motion
+import { motion } from 'framer-motion';
 // UI components
 import { BackgroundBeams } from '@/components/ui/background-beams';
 // General components
 import Button from '../../general/Button/Button';
-
+// Font
+import { monotonFont } from '@/helpers/font';
 // Types
 import { HeaderTypes } from './Header.types';
 
@@ -16,19 +19,38 @@ const Header = ({
 }: HeaderTypes) => {
   return (
     <div className="min-h-[100vh] w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
-      <div className="max-w-6xl mx-auto p-4">
-        <h1 className="relative z-10 text-5xl md:text-7xl lg:text-8xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold transition-all">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+        className={`relative z-10 h-20 md:h-30 lg:h-35 text-7xl md:text-8xl lg:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-center ${monotonFont.className}`}
+      >
+        {'{?:}'}
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 1, ease: 'easeOut' }}
+        className="max-w-6xl mx-auto p-4"
+      >
+        <h1 className="relative z-10 text-5xl md:text-7xl lg:text-8xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold">
           {title}
         </h1>
-        <p className="text-neutral-500 text-center lg:text-center max-w-sm md:max-w-xl lg:max-w-2xl mx-auto my-2 mt-5 p-4 text-lg md:text-lg lg:text-xl  relative z-10 transition-all  overflow-x--hidden">
+        <p className="text-neutral-500 text-center max-w-sm md:max-w-xl lg:max-w-2xl mx-auto mt-5 p-4 text-lg md:text-lg lg:text-xl relative z-10">
           {description}
         </p>
-      </div>
+      </motion.div>
 
       {isButtonActive && (
-        <div className="mt-10">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 1, ease: 'easeOut' }}
+          className="mt-20"
+        >
           <Button title={buttonDescription} />
-        </div>
+        </motion.div>
       )}
 
       <BackgroundBeams />
