@@ -2,14 +2,16 @@
 'use client';
 
 // General components
-import Background from '@/components/general/BackgroundBeam/Background';
+import Header from '@/components/section/Header/Header';
+// Section
+import Knowus from '@/components/section/Knowus/Knowus';
 
 // Homepage
 const HomePage = () => {
   return (
     <>
       <section id="banner">
-        <Background
+        <Header
           title="SNIPPETLABS"
           description="From our labs for your dreams"
           isButtonActive={true}
@@ -17,18 +19,10 @@ const HomePage = () => {
         />
       </section>
       <section id="knowus">
-        <Background
-          title="KNOW OUR COMPANY"
-          description="We're an emerging product development studio on a mission to turn ideas into intuitive, delightful, and scalable digital experiences. Whether you're a startup with a sketch or a brand with a vision, we dive deep with love, empathy, and fun at the core of everything we create. Our team blends craftsmanship with compassion, ensuring every pixel, line of code, and interaction feels personal and purposeful. We believe the best products come from close collaboration, honest conversations, and a little bit of magic"
-          isButtonActive={false}
-        />
+        <Knowus/>
       </section>
-      <section id="technology">
-        <Background title="TECHNOLOGY STACK" isButtonActive={false} />
-      </section>
-      <section id="motto">
-        <Background title="OUR MOTTO" isButtonActive={false} />
-      </section>
+      <section id="technology"></section>
+      <section id="motto"></section>
     </>
   );
 };
