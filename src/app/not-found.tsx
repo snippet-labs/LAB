@@ -2,6 +2,9 @@
 
 // Motion
 import { motion } from 'motion/react';
+// Icons
+import { MdOutlineArrowBackIosNew } from 'react-icons/md';
+
 // Font
 import { monotonFont } from '@/helpers/font';
 // Link
@@ -33,7 +36,7 @@ const PageNotFound = () => {
         className="mt-6"
       >
         <Link href={'/'}>
-          <Button title="Home" />
+          <Button title="Home" icon={<MdOutlineArrowBackIosNew size={0} />} />
         </Link>
       </motion.div>
     </div>
