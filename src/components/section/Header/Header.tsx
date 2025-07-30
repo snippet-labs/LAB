@@ -23,7 +23,7 @@ const Header = ({
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeOut' }}
-        className={`relative z-10 h-20 md:h-30 lg:h-35 text-7xl md:text-8xl lg:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-center ${monotonFont.className}`}
+        className={`relative z-10 h-20 md:h-30 lg:h-35 text-7xl md:text-8xl lg:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-center logo-gradient-shift-animation ${monotonFont.className}`}
       >
         {'{?:}'}
       </motion.div>
