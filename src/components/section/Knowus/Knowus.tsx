@@ -1,6 +1,6 @@
 'use client';
 
-// UI components
+// Modules
 import { BackgroundBeams } from '@/components/ui/background-beams';
 
 const Knowus = () => {

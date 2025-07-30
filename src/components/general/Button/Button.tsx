@@ -1,6 +1,6 @@
 'use client';
 
-// Types
+// Modules
 import { ButtonTypes } from './Button.types';
 
 const Button = ({ title, icon }: ButtonTypes) => {

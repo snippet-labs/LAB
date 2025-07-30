@@ -1,14 +1,10 @@
 'use client';
 
-// Motion
+// Modules
 import { motion } from 'framer-motion';
-// UI components
 import { BackgroundBeams } from '@/components/ui/background-beams';
-// General components
 import Capsule from '../../general/Capsule/Capsule';
-// Font
 import { monotonFont } from '@/helpers/font';
-// Types
 import { HeaderTypes } from './Header.types';
 
 const Header = ({
