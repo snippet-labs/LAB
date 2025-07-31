@@ -1,12 +1,10 @@
 // app > page.tsx
 'use client';
 
-// General components
+// Modules
 import Header from '@/components/section/Header/Header';
-// Section
 import Knowus from '@/components/section/Knowus/Knowus';
 
-// Homepage
 const HomePage = () => {
   return (
     <>
@@ -19,7 +17,7 @@ const HomePage = () => {
         />
       </section>
       <section id="knowus">
-        <Knowus/>
+        <Knowus />
       </section>
       <section id="technology"></section>
       <section id="motto"></section>

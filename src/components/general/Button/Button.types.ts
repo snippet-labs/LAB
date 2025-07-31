@@ -1,3 +1,4 @@
 export interface ButtonTypes {
-    title?: string;
+    title: string;
+    icon?: React.ReactNode;
 }

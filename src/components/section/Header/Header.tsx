@@ -1,14 +1,10 @@
 'use client';
 
-// Motion
+// Modules
 import { motion } from 'framer-motion';
-// UI components
 import { BackgroundBeams } from '@/components/ui/background-beams';
-// General components
-import Button from '../../general/Button/Button';
-// Font
+import Capsule from '../../general/Capsule/Capsule';
 import { monotonFont } from '@/helpers/font';
-// Types
 import { HeaderTypes } from './Header.types';
 
 const Header = ({
@@ -49,7 +45,7 @@ const Header = ({
           transition={{ delay: 0.6, duration: 1, ease: 'easeOut' }}
           className="mt-20"
         >
-          <Button title={buttonDescription} />
+          <Capsule title={buttonDescription} />
         </motion.div>
       )}
 

@@ -1,10 +1,7 @@
+// Modules
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-
-// Global css
 import './globals.css';
-
-// General components
 import Navbar from '@/components/general/Navbar';
 
 // Font
