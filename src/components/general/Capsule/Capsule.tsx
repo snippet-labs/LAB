@@ -1,5 +1,3 @@
-'use client';
-
 // Modules
 import { CapsuleTypes } from './Capsule.types';
 
