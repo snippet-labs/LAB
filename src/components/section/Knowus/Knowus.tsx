@@ -10,10 +10,10 @@ import { monotonFont } from '@/helpers/font';
 import { MdTaskAlt } from 'react-icons/md';
 import { LiaEyeSolid } from 'react-icons/lia';
 import { motion, useInView } from 'framer-motion';
+import { useSectionInView } from '@/hooks/useSectionInView';
 
 const Knowus = () => {
-  const ref = useRef(null);
-  const isSectionInViewPort = useInView(ref, { once: true, margin: '-100px' });
+  const { ref, isSectionInViewPort } = useSectionInView();
 
   return (
     <div
@@ -59,7 +59,7 @@ const Knowus = () => {
             <Cards
               title="Our Mission"
               description="To empower people through modern technology and intuitive design, making impactful solutions accessible to all."
-              icon={<MdTaskAlt />}
+              icon={<MdTaskAlt size={25} />}
               iconColor="text-purple-400"
               iconBackground="bg-purple-600"
               iconBorder="border-purple-500"
@@ -67,7 +67,7 @@ const Knowus = () => {
             <Cards
               title="Our Vision"
               description=" Bridging the gap between complexity and simplicity through innovation, making technology seamless and human-centric."
-              icon={<LiaEyeSolid />}
+              icon={<LiaEyeSolid size={25} />}
               iconColor="text-blue-400"
               iconBackground="bg-blue-600"
               iconBorder="border-blue-500"

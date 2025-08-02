@@ -4,6 +4,7 @@
 // Modules
 import Header from '@/components/section/Header/Header';
 import Knowus from '@/components/section/Knowus/Knowus';
+import Technology from '@/components/section/Technology/Technology';
 
 const HomePage = () => {
   return (
@@ -19,7 +20,9 @@ const HomePage = () => {
       <section id="knowus">
         <Knowus />
       </section>
-      <section id="technology"></section>
+      <section id="technology">
+        <Technology />
+      </section>
       <section id="motto"></section>
     </>
   );
