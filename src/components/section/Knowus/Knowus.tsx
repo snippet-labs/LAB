@@ -41,7 +41,7 @@ const Knowus = () => {
             animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 1, ease: 'easeOut' }}
           >
-            <p className="text-lg md:text-xl text-neutral-300 text-justify leading-relaxed">
+            <p className="text-lg md:text-xl font-semibold text-justify leading-relaxed bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600">
               Discover who we are, what we believe in, and how we’re shaping the
               future through technology. Our team is committed to delivering
               cutting-edge solutions that make life easier, smarter, and more
