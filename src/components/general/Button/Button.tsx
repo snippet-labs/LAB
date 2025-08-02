@@ -1,5 +1,3 @@
-'use client';
-
 // Modules
 import { ButtonTypes } from './Button.types';
 

@@ -1,9 +1,7 @@
-'use client';
-
 import React from 'react';
-// UI components
+
+// Modules
 import { FloatingNav } from '@/components/ui/floating-navbar';
-// Icons
 import { RiHome9Fill } from 'react-icons/ri';
 import { PiUsersFill } from 'react-icons/pi';
 import { AiFillProduct } from 'react-icons/ai';
