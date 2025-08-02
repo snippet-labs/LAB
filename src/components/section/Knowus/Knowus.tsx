@@ -1,25 +1,36 @@
+'use client';
+
+// Hooks
+import { useRef } from 'react';
+
 // Modules
 import Cards from '@/components/general/Cards/Cards';
 import { BackgroundBeams } from '@/components/ui/background-beams';
 import { monotonFont } from '@/helpers/font';
 import { MdTaskAlt } from 'react-icons/md';
 import { LiaEyeSolid } from 'react-icons/lia';
-import { motion } from 'motion/react';
+import { motion, useInView } from 'framer-motion';
 
 const Knowus = () => {
+  const ref = useRef(null);
+  const isSectionInViewPort = useInView(ref, { once: true, margin: '-100px' });
+
   return (
-    <div className="relative h-screen w-full bg-neutral-950 overflow-hidden flex flex-col items-center justify-center antialiased">
+    <div
+      ref={ref}
+      className="relative h-screen w-full bg-neutral-950 overflow-hidden flex flex-col items-center justify-center antialiased"
+    >
       <BackgroundBeams />
 
       <div className="relative z-10 flex flex-col items-center justify-center px-6 md:px-16 py-12 gap-12">
         <div className="text-white max-w-3xl w-full">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, ease: 'easeOut' }}
           >
             <h1
-              className={`text-5xl md:text-7xl lg:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-left transition-all mb-4 ${monotonFont.className}`}
+              className={`text-5xl md:text-7xl lg:text-8xl bg-clip-text text-transparent  bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 logo-gradient-shift-animation text-left transition-all mb-4 ${monotonFont.className}`}
             >
               KNOW US
             </h1>
@@ -27,7 +38,7 @@ const Knowus = () => {
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.3, duration: 1, ease: 'easeOut' }}
           >
             <p className="text-lg md:text-xl text-neutral-300 text-justify leading-relaxed">
@@ -41,7 +52,7 @@ const Knowus = () => {
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.6, duration: 1, ease: 'easeOut' }}
         >
           <div className="flex flex-col md:flex-row gap-6 w-full max-w-4xl justify-center">

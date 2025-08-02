@@ -12,7 +12,7 @@ const HomePage = () => {
         <Header
           title="SNIPPETLABS"
           description="From our labs for your dreams"
-          isButtonActive={false}
+          isButtonActive={true}
           buttonDescription="Build your next dream product with us"
         />
       </section>
