@@ -45,10 +45,10 @@ const Technology = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            transition={{ delay: 0.6, ease: 'easeOut' }}
             className="max-w-4xl"
           >
-            <div className="flex overflow-hidden border mt-15  EDGEGRADIENT">
+            <div className="flex overflow-hidden border pt-3 pb-3 mt-15  EDGEGRADIENT">
               <motion.div
                 initial={{ x: 0 }}
                 animate={{ x: '-100%' }}
