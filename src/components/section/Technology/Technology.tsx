@@ -6,7 +6,8 @@ import { monotonFont } from '@/helpers/font';
 import { motion } from 'motion/react';
 import { useSectionInView } from '@/hooks/useSectionInView';
 import { stackData } from '@/data/stackData';
-import Image from 'next/image';
+import Marqee from '@/components/general/Marqee/Marqee';
+
 
 const Technology = () => {
   const { ref, isSectionInViewPort } = useSectionInView();
@@ -14,7 +15,7 @@ const Technology = () => {
   return (
     <div
       ref={ref}
-      className="relative h-screen w-full bg-neutral-950 overflow-hidden flex flex-col items-center justify-center antialiased"
+      className="relative min-h-[100vh] w-full bg-neutral-950 overflow-hidden flex flex-col items-center justify-center antialiased"
     >
       <BackgroundBeams />
 
@@ -42,55 +43,9 @@ const Technology = () => {
               projects happy and delighted.
             </p>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.6, ease: 'easeOut' }}
-            className="max-w-4xl"
-          >
-            <div className="flex overflow-hidden border pt-3 pb-3 mt-15  EDGEGRADIENT">
-              <motion.div
-                initial={{ x: 0 }}
-                animate={{ x: '-100%' }}
-                transition={{ duration: 35, repeat: Infinity, ease: 'linear' }}
-                className="flex flex-shrink-0 gap-1"
-              >
-                {stackData.map((image, index) => {
-                  return (
-                    <Image
-                      src={image}
-                      alt=""
-                      width={70}
-                      height={70}
-                      key={index}
-                      className="group bg-white/5 backdrop-blur-md border border-neutral-800 rounded-2xl shadow-xl"
-                    />
-                  );
-                })}
-              </motion.div>
-              <motion.div
-                initial={{ x: 0 }}
-                animate={{ x: '-100%' }}
-                transition={{ duration: 35, repeat: Infinity, ease: 'linear' }}
-                className="flex flex-shrink-0 gap-1"
-              >
-                {stackData.map((image, index) => {
-                  return (
-                    <Image
-                      src={image}
-                      alt={''}
-                      width={70}
-                      height={70}
-                      key={index}
-                      className="group bg-white/5 backdrop-blur-md border border-neutral-800 rounded-2xl shadow-xl"
-                    />
-                  );
-                })}
-              </motion.div>
-            </div>
-          </motion.div>
         </div>
       </div>
+      <Marqee data={stackData}/>
     </div>
   );
 };

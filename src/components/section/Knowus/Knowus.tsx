@@ -15,7 +15,7 @@ const Knowus = () => {
   return (
     <div
       ref={ref}
-      className="relative h-screen w-full bg-neutral-950 overflow-hidden flex flex-col items-center justify-center antialiased"
+      className="relative min-h-[100vh] w-full bg-neutral-950 overflow-hidden flex flex-col items-center justify-center antialiased"
     >
       <BackgroundBeams />
 
