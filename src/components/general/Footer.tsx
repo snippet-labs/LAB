@@ -6,22 +6,7 @@ import { useInView, motion } from 'motion/react';
 import Link from 'next/link';
 import { monotonFont } from '@/helpers/font';
 import Tooltip from './Tooltip/Tooltip';
-
-// Sitemap
-const sitemapLinks = [
-  {
-    title: 'Company',
-    links: ['About', 'Blog'],
-  },
-  {
-    title: 'Product',
-    links: ['Releases'],
-  },
-  {
-    title: 'Support',
-    links: ['Help Center', 'Terms', 'Status'],
-  },
-];
+import { sitemapLinks } from '@/data/siteMap';
 
 const Footer = () => {
   const ref = useRef(null);
