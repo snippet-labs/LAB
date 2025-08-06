@@ -11,15 +11,15 @@ import Tooltip from './Tooltip/Tooltip';
 const sitemapLinks = [
   {
     title: 'Company',
-    links: ['About', 'Careers', 'Press', 'Blog'],
+    links: ['About', 'Blog'],
   },
   {
     title: 'Product',
-    links: ['Features', 'Pricing', 'Docs', 'Releases'],
+    links: ['Releases'],
   },
   {
     title: 'Support',
-    links: ['Help Center', 'Terms', 'Privacy', 'Status'],
+    links: ['Help Center', 'Terms', 'Status'],
   },
 ];
 
@@ -119,7 +119,7 @@ const Footer = () => {
           transition={{ delay: 0.9, duration: 1, ease: 'easeOut' }}
           className="text-center text-gray-400 text-sm"
         >
-          &copy; {currentYear}
+          &copy; {currentYear} &nbsp;
           <span className="logo-gradient-shift-animation transition-all">
             Team Snippets
           </span>
