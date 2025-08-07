@@ -8,7 +8,6 @@ import { useSectionInView } from '@/hooks/useSectionInView';
 import { stackData } from '@/data/stackData';
 import Marqee from '@/components/general/Marqee/Marqee';
 
-
 const Technology = () => {
   const { ref, isSectionInViewPort } = useSectionInView();
 
@@ -38,14 +37,14 @@ const Technology = () => {
             transition={{ delay: 0.3, duration: 1, ease: 'easeOut' }}
           >
             <p className="text-lg md:text-xl text-justify leading-relaxed bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600">
-              Our weapons of choice, our technology stack that not only give us
-              en edge to build something grand efforlessly but make our dream
-              projects happy and delighted.
+              Our weapons of choice — a technology stack that not only gives us
+              an edge to build something grand effortlessly, but also brings joy
+              and delight to our dream projects.
             </p>
           </motion.div>
         </div>
       </div>
-      <Marqee data={stackData}/>
+      <Marqee data={stackData} />
     </div>
   );
 };
