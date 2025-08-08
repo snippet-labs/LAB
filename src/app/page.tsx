@@ -25,9 +25,6 @@ const HomePage = () => {
         <Technology />
       </section>
       <section id="motto"></section>
-      <section id="footer">
-        <Footer />
-      </section>
     </>
   );
 };
