@@ -5,6 +5,7 @@
 import Header from '@/components/section/Header/Header';
 import Knowus from '@/components/section/Knowus/Knowus';
 import Technology from '@/components/section/Technology/Technology';
+import Footer from '@/components/general/Footer';
 
 const HomePage = () => {
   return (
@@ -24,6 +25,9 @@ const HomePage = () => {
         <Technology />
       </section>
       <section id="motto"></section>
+      <section id="footer">
+        <Footer />
+      </section>
     </>
   );
 };
