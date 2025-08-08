@@ -84,9 +84,24 @@ const Footer = () => {
                 Subscribe
               </button>
             </form>):
-            (<div className='text-gray-400 font-bold text-sm mb-4'>
-               Launching Soon ...
-            </div>)}
+            <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gradient-to-r from-purple-600 via-cyan-500 to-blue-500 shadow-lg animate-pulse">
+                <svg
+                className="w-6 h-6 text-red-500 drop-shadow"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                viewBox="0 0 24 24"
+                >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z"
+                />
+                </svg>
+              <span className="font-bold text-white text-base tracking-wide drop-shadow">
+                Feature in Development ...
+              </span>
+            </div>}
 
           </motion.div>
         </div>
