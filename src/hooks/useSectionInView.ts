@@ -6,7 +6,7 @@ import { RefObject, useRef } from "react";
 // Modules
 import { useInView } from 'framer-motion';
 
-export const useSectionInView = (): { ref: RefObject<HTMLDivElement | null>, isSectionInViewPort: Boolean } => {
+export const useSectionInView = (): { ref: RefObject<HTMLDivElement | null>, isSectionInViewPort: boolean } => {
     const ref = useRef<HTMLDivElement | null>(null);
     const isSectionInViewPort = useInView(ref, { once: true, margin: '-100px' });
 

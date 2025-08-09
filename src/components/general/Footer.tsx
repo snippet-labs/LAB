@@ -7,11 +7,11 @@ import Link from 'next/link';
 import { monotonFont } from '@/helpers/font';
 import Tooltip from './Tooltip/Tooltip';
 import { sitemapLinks } from '@/data/siteMap';
-import { FeatureFlag } from '@/hooks/useFeatureFlag';
+import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 import { MdErrorOutline } from 'react-icons/md';
 
 const Footer = () => {
-  const newsLetterFeature = FeatureFlag();
+  const { isComponent } = useFeatureFlag();
 
   const ref = useRef(null);
   const isSectionInViewPort = useInView(ref, {
@@ -71,7 +71,7 @@ const Footer = () => {
               Get the latest news, articles, and updates delivered to your
               inbox.
             </p>
-            {newsLetterFeature ? (            
+            {isComponent.newsLetter ? (            
               <form className="flex flex-col sm:flex-row items-center gap-3">
               <input
                 type="email"
