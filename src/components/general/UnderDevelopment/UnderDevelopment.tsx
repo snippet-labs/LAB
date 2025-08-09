@@ -1,9 +1,17 @@
+// Modules
 import { ContainerTextFlip } from '@/components/ui/container-text-flip';
 
 const UnderDevelopment = () => {
   return (
     <ContainerTextFlip
-      words={['better', 'modern', 'Tyler Durden', 'awesome']}
+      // Pass two words at a time
+      words={[
+        'Building this',
+        'Working on ',
+        'Shipping this',
+        'Stay tuned',
+        'Very soon',
+      ]}
     />
   );
 };
