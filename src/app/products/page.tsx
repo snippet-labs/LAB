@@ -8,10 +8,10 @@ import { motion } from 'framer-motion';
 import { useSectionInView } from '@/hooks/useSectionInView';
 import { monotonFont } from '@/helpers/font';
 
-const ProductCard = () => {
+const ProductPage = () => {
   const { isPage } = useFeatureFlag();
   const { ref, isSectionInViewPort } = useSectionInView();
-  console.log(isPage);
+
   return (
     <div
       ref={ref}
@@ -63,4 +63,4 @@ const ProductCard = () => {
   );
 };
 
-export default ProductCard;
+export default ProductPage;
