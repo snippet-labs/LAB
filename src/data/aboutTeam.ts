@@ -8,7 +8,7 @@ export const aboutTeam = [
     },
     {
         title: "Hemangshu Dey",
-        description: "As a co-founder and fullstack developer, Hemangshu is instrumental in shaping our vision and building robust, end-to-end solutions. He drives development across both front-end and back-end systems.",
+        description: "As a Co-founder and Fullstack developer, Hemangshu is instrumental in shaping our vision and building robust, end-to-end solutions. He drives development across both front-end and back-end systems.",
         badge: "Co-Founder & FullStack Develooper",
         image: "/images/hemangshu.png"
     },
