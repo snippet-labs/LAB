@@ -8,7 +8,7 @@ import { monotonFont } from '@/helpers/font';
 import Tooltip from './Tooltip/Tooltip';
 import { sitemapLinks } from '@/data/siteMap';
 import { useFeatureFlag } from '@/hooks/useFeatureFlag';
-import { MdErrorOutline } from 'react-icons/md';
+import UnderDevelopment from './UnderDevelopment/UnderDevelopment';
 
 const Footer = () => {
   const { isComponent } = useFeatureFlag();
@@ -61,7 +61,6 @@ const Footer = () => {
             transition={{ duration: 1, ease: 'easeOut' }}
             className="flex-1 max-w-md"
           >
-
             <h3
               className={`text-white text-2xl tracking-wide mb-3 logo-gradient-shift-animation transition-all ${monotonFont.className}`}
             >
@@ -71,27 +70,23 @@ const Footer = () => {
               Get the latest news, articles, and updates delivered to your
               inbox.
             </p>
-            {isComponent.newsLetter ? (            
+            {isComponent.newsLetter ? (
               <form className="flex flex-col sm:flex-row items-center gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full flex-1 px-4 py-2 rounded-lg border border-white/20 bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-              />
-              <button
-                type="submit"
-                className="bg-cyan-500 hover:bg-cyan-600 text-black px-5 py-2 rounded-lg transition-all shadow-md hover:cursor-pointer"
-              >
-                Subscribe
-              </button>
-            </form>):
-            <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gradient-to-r from-purple-600 via-cyan-500 to-blue-500 shadow-lg animate-pulse">
-              <MdErrorOutline className="w-6 h-6 text-red-500 drop-shadow" />
-              <span className="font-bold text-white text-base tracking-wide drop-shadow">
-              Feature in Development ...
-              </span>
-            </div>}
-
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full flex-1 px-4 py-2 rounded-lg border border-white/20 bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                />
+                <button
+                  type="submit"
+                  className="bg-cyan-500 hover:bg-cyan-600 text-black px-5 py-2 rounded-lg transition-all shadow-md hover:cursor-pointer"
+                >
+                  Subscribe
+                </button>
+              </form>
+            ) : (
+              <UnderDevelopment />
+            )}
           </motion.div>
         </div>
 
@@ -99,7 +94,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 1, ease: 'easeOut' }}
-          className="mt-5 flex-col lg:flex-row md:flex-row"
+          className="mt-6 flex flex-col lg:flex-row md:flex-row"
         >
           <Tooltip />
         </motion.div>
