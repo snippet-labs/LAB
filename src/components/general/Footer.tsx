@@ -7,8 +7,12 @@ import Link from 'next/link';
 import { monotonFont } from '@/helpers/font';
 import Tooltip from './Tooltip/Tooltip';
 import { sitemapLinks } from '@/data/siteMap';
+import { FeatureFlag } from '@/hooks/useFeatureFlag';
+import { MdErrorOutline } from 'react-icons/md';
 
 const Footer = () => {
+  const newsLetterFeature = FeatureFlag();
+
   const ref = useRef(null);
   const isSectionInViewPort = useInView(ref, {
     once: true,
@@ -57,8 +61,9 @@ const Footer = () => {
             transition={{ duration: 1, ease: 'easeOut' }}
             className="flex-1 max-w-md"
           >
+
             <h3
-              className={`text-white text-2xl mb-3 logo-gradient-shift-animation transition-all ${monotonFont.className}`}
+              className={`text-white text-2xl tracking-wide mb-3 logo-gradient-shift-animation transition-all ${monotonFont.className}`}
             >
               Subscribe to our Newsletter
             </h3>
@@ -66,7 +71,8 @@ const Footer = () => {
               Get the latest news, articles, and updates delivered to your
               inbox.
             </p>
-            <form className="flex flex-col sm:flex-row items-center gap-3">
+            {newsLetterFeature ? (            
+              <form className="flex flex-col sm:flex-row items-center gap-3">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -78,7 +84,14 @@ const Footer = () => {
               >
                 Subscribe
               </button>
-            </form>
+            </form>):
+            <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gradient-to-r from-purple-600 via-cyan-500 to-blue-500 shadow-lg animate-pulse">
+              <MdErrorOutline className="w-6 h-6 text-red-500 drop-shadow" />
+              <span className="font-bold text-white text-base tracking-wide drop-shadow">
+              Feature in Development ...
+              </span>
+            </div>}
+
           </motion.div>
         </div>
 
