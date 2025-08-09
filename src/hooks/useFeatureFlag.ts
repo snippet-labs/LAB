@@ -1,8 +1,10 @@
-import { ReactNode } from 'react';
+export const  useFeatureFlag= () => {
+  const isComponent = {
+    newsLetter : false
+  }
+  const isPage = {
+    productPage : false,
+  };
 
-
-export function FeatureFlag() {
-    const newsLetterFeature = false;
-
-  return newsLetterFeature;
+ return {isComponent, isPage}
 }
