@@ -1,6 +1,8 @@
 'use client';
 
+// Hooks
 import React, { JSX, useState } from 'react';
+// Modules
 import {
   motion,
   AnimatePresence,

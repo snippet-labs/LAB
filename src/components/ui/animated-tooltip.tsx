@@ -1,6 +1,8 @@
 'use client';
 
+// Hooks
 import React, { useState, useRef } from 'react';
+// Modules
 import {
   motion,
   useTransform,

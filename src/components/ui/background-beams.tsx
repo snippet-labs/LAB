@@ -1,7 +1,8 @@
 'use client';
 
+// Hooks
 import React from 'react';
-
+// Modules
 import { motion } from 'motion/react';
 import { cn } from '@/lib/utils';
 
@@ -127,7 +128,7 @@ export const BackgroundBeams = React.memo(
               cy="0"
               r="1"
               gradientUnits="userSpaceOnUse"
-              // gradientTransform="translate(352 34) rotate(90) scale(555 1560.62)" 
+              // gradientTransform="translate(352 34) rotate(90) scale(555 1560.62)"
             >
               <stop offset="0.0666667" stopColor="#d4d4d4"></stop>
               <stop offset="0.243243" stopColor="#d4d4d4"></stop>
