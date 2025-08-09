@@ -6,7 +6,6 @@ import TracingCard from '@/components/general/TracingCard/TracingCard';
 import { motion } from 'motion/react';
 import { monotonFont } from '@/helpers/font';
 import { useSectionInView } from '@/hooks/useSectionInView';
-import Footer from '@/components/general/Footer';
 
 const TeamPage = () => {
   const { ref, isSectionInViewPort } = useSectionInView();
