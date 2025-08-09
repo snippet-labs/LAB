@@ -15,22 +15,24 @@ const TracingCard = () => {
               {item.badge}
             </h2>
 
-            <p className={`text-xl md:text-2xl lg:text-3xl mb-4 text-white ${cursiveFont.className}`}>
+            <p
+              className={`text-xl md:text-2xl lg:text-3xl mb-4 text-white ${cursiveFont.className}`}
+            >
               {item.title}
             </p>
 
-            <div className="text-sm prose prose-sm ">
+            <div className="text-sm prose prose-sm mt-10">
               {item?.image && (
                 <img
                   src={item.image}
                   alt="team image thumbnail"
-                  height="900"
-                  width="900"
+                  height="400"
+                  width="400"
                   className="rounded-lg mb-10 object-cover"
                 />
               )}
 
-              <div className="text-white"> {item.description}</div>
+              <div className="text-white text-justify"> {item.description}</div>
             </div>
           </div>
         ))}

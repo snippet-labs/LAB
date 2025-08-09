@@ -3,7 +3,7 @@ export const teamDetails = [
         id: 1,
         name: 'Suvajit Karmakar',
         designation: 'Founder',
-        image: '/suvajit.png',
+        image: '/avatar/suvajit.png',
     },
     {
         id: 2,

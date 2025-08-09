@@ -1,9 +1,15 @@
 export const aboutTeam = [
     {
         title: 'Suvajit Karmakar',
-        description: "hello",
+        description: "I have long aspired to start my own venture. Although I have faced multiple setbacks in the past, this time I am fortunate to have a dedicated team to collaborate with—sharing ideas, solving challenges, and working together to turn a childhood dream into reality. I am currently employed as a Full Stack Software Engineer at a startup, continuing to believe in the power of dreams, working hard, and giving my utmost effort. Whether the venture succeeds or not, we will emerge with valuable experience and noteworthy projects to showcase in our portfolios.",
         badge: 'Founder & FullStack Developer',
         image:
-            'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            '/suvajit.png',
     },
+    {
+        title: "Hemangshu Dey",
+        description: "",
+        badge: "Co-Founder & FullStack Develooper",
+        image: "/subhajit.png"
+    }
 ];
