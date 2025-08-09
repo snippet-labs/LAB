@@ -7,6 +7,7 @@ import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 import { motion } from 'framer-motion';
 import { useSectionInView } from '@/hooks/useSectionInView';
 import { monotonFont } from '@/helpers/font';
+import UnderDevelopment from '@/components/general/UnderDevelopment/UnderDevelopment';
 
 const ProductPage = () => {
   const { isPage } = useFeatureFlag();
@@ -37,10 +38,10 @@ const ProductPage = () => {
             transition={{ delay: 0.3, duration: 1, ease: 'easeOut' }}
           >
             <p className="text-md md:text-xl font-medium text-justify leading-relaxed bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600">
-              Discover who we are, what we believe in, and how we’re shaping the
-              future through technology. Our team is committed to delivering
-              cutting-edge solutions that make life easier, smarter, and more
-              connected.
+              Our products are designed with innovation, precision, and purpose.
+              We create solutions that not only meet your needs but also inspire
+              possibilities, combining quality craftsmanship with modern
+              technology to deliver delightment.
             </p>
           </motion.div>
         </div>
@@ -56,7 +57,7 @@ const ProductPage = () => {
             ))}
           </div>
         ) : (
-          <div className="text-white">Coming Soon</div>
+          <UnderDevelopment />
         )}
       </div>
     </div>
