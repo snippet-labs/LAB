@@ -40,10 +40,10 @@ const Footer = () => {
                   {section.title}
                 </h3>
                 <ul className="space-y-2 text-gray-300">
-                  {section.links.map((link) => (
+                  {section.links.map((link,index) => (
                     <li key={link}>
                       <Link
-                        href="#"
+                        href={section.url[index]}
                         className="hover:underline hover:text-white text-purple-300/90 transition-all"
                       >
                         {link}
