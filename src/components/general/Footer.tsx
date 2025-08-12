@@ -11,7 +11,9 @@ import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 import UnderDevelopment from './UnderDevelopment/UnderDevelopment';
 
 const Footer = () => {
+
   const { isComponent } = useFeatureFlag();
+
 
   const ref = useRef(null);
   const isSectionInViewPort = useInView(ref, {
@@ -40,10 +42,10 @@ const Footer = () => {
                   {section.title}
                 </h3>
                 <ul className="space-y-2 text-gray-300">
-                  {section.links.map((link) => (
+                  {section.links.map((link,index) => (
                     <li key={link}>
                       <Link
-                        href="#"
+                        href={section.url[index]}
                         className="hover:underline hover:text-white text-purple-300/90 transition-all"
                       >
                         {link}
@@ -70,6 +72,7 @@ const Footer = () => {
               Get the latest news, articles, and updates delivered to your
               inbox.
             </p>
+            
             {isComponent.newsLetter ? (
               <form className="flex flex-col sm:flex-row items-center gap-3">
                 <input
@@ -85,8 +88,8 @@ const Footer = () => {
                 </button>
               </form>
             ) : (
-              <UnderDevelopment />
-            )}
+              <UnderDevelopment/>
+            )} 
           </motion.div>
         </div>
 
