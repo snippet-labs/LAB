@@ -11,7 +11,9 @@ import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 import UnderDevelopment from './UnderDevelopment/UnderDevelopment';
 
 const Footer = () => {
+
   const { isComponent } = useFeatureFlag();
+
 
   const ref = useRef(null);
   const isSectionInViewPort = useInView(ref, {
@@ -70,6 +72,7 @@ const Footer = () => {
               Get the latest news, articles, and updates delivered to your
               inbox.
             </p>
+            
             {isComponent.newsLetter ? (
               <form className="flex flex-col sm:flex-row items-center gap-3">
                 <input
@@ -85,8 +88,8 @@ const Footer = () => {
                 </button>
               </form>
             ) : (
-              <UnderDevelopment />
-            )}
+              <UnderDevelopment/>
+            )} 
           </motion.div>
         </div>
 

@@ -5,6 +5,14 @@ export const  useFeatureFlag= () => {
   const isPage = {
     productPage : false,
   };
+  const isFooterLink = {
+    isAboutPage: false,
+    isBlogPage: false,
+    isHelpPage: false,
+    isReleasesPage: false,
+    isStatusPage: false,
+    isTermsPage: false,
+  }
 
- return {isComponent, isPage}
+ return {isComponent, isPage , isFooterLink};
 }

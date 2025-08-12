@@ -3,10 +3,14 @@
 import UnderDevelopment from '@/components/general/UnderDevelopment/UnderDevelopment';
 import { monotonFont } from '@/helpers/font'
 import { BackgroundBeams } from '@/components/ui/background-beams';
+import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 import React from 'react'
 import { motion } from 'motion/react';
 
-const page = () => {
+const HelpPage = () => {
+
+        const footerLink = useFeatureFlag();
+
   return (
         <div className="min-h-[100vh] w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white overflow-x-hidden">
         <BackgroundBeams />
@@ -21,12 +25,14 @@ const page = () => {
         >
           HELP CENTER
         </span>
-        <div className="mt-10 flex justify-center w-full">
-          <UnderDevelopment />
-        </div>
+      {footerLink.isFooterLink.isHelpPage? (<></>) : (
+      <div className="mt-10 flex justify-center w-full">
+        <UnderDevelopment />
+      </div>
+      )}
             </motion.div>
         </div>
   )
 }
 
-export default page
+export default HelpPage
