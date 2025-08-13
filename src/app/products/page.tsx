@@ -1,12 +1,14 @@
 'use client';
 
-import GyroCard from '@/components/general/GyroCard/GyroCard';
+// Hooks
+import { useSectionInView } from '@/hooks/useSectionInView';
+import { useFeatureFlag } from '@/hooks/useFeatureFlag';
+// Modules
 import { BackgroundBeams } from '@/components/ui/background-beams';
 import { productDetails } from '@/data/productDetails';
-import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 import { motion } from 'framer-motion';
-import { useSectionInView } from '@/hooks/useSectionInView';
 import { monotonFont } from '@/helpers/font';
+import GyroCard from '@/components/general/GyroCard/GyroCard';
 import UnderDevelopment from '@/components/general/UnderDevelopment/UnderDevelopment';
 
 const ProductPage = () => {

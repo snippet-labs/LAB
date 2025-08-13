@@ -1,11 +1,12 @@
 'use client';
 
+// Hooks
+import { useSectionInView } from '@/hooks/useSectionInView';
 // Modules
 import { BackgroundBeams } from '@/components/ui/background-beams';
-import TracingCard from '@/components/general/TracingCard/TracingCard';
 import { motion } from 'motion/react';
 import { monotonFont } from '@/helpers/font';
-import { useSectionInView } from '@/hooks/useSectionInView';
+import TracingCard from '@/components/general/TracingCard/TracingCard';
 
 const TeamPage = () => {
   const { ref, isSectionInViewPort } = useSectionInView();
