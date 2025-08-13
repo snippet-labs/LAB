@@ -11,7 +11,7 @@ import { monotonFont } from '@/helpers/font';
 import GyroCard from '@/components/general/GyroCard/GyroCard';
 import UnderDevelopment from '@/components/general/UnderDevelopment/UnderDevelopment';
 
-const ProductPage = () => {
+const ProductPage: React.FC = () => {
   const { isPage } = useFeatureFlag();
   const { ref, isSectionInViewPort } = useSectionInView();
 
@@ -48,7 +48,12 @@ const ProductPage = () => {
           </motion.div>
         </div>
         {isPage.productPage ? (
-          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.6, duration: 1, ease: 'easeOut' }}
+            className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-6xl"
+          >
             {productDetails.map((product, index) => (
               <GyroCard
                 key={index}
@@ -57,12 +62,13 @@ const ProductPage = () => {
                 image={product.image}
               />
             ))}
-          </div>
+          </motion.div>
         ) : (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6, duration: 1, ease: 'easeOut' }}
+            className="mt-10 flex justify-center w-full"
           >
             <UnderDevelopment />
           </motion.div>

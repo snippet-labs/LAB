@@ -1,7 +1,6 @@
 'use client';
 
 // Hooks
-import React from 'react';
 import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 // Modules
 import { monotonFont } from '@/helpers/font';
@@ -9,7 +8,7 @@ import { BackgroundBeams } from '@/components/ui/background-beams';
 import { motion } from 'motion/react';
 import UnderDevelopment from '@/components/general/UnderDevelopment/UnderDevelopment';
 
-const StatusPage = () => {
+const StatusPage: React.FC = () => {
   const footerLink = useFeatureFlag();
 
   return (
@@ -26,12 +25,19 @@ const StatusPage = () => {
         >
           STATUS
         </span>
+      </motion.div>
+      <motion.div>
         {footerLink.isFooterLink.isStatusPage ? (
           <></>
         ) : (
-          <div className="mt-10 flex justify-center w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 1, ease: 'easeOut' }}
+            className="mt-10 flex justify-center w-full"
+          >
             <UnderDevelopment />
-          </div>
+          </motion.div>
         )}
       </motion.div>
     </div>
