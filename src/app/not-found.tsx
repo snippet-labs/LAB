@@ -1,5 +1,7 @@
 'use client';
 
+// Hooks
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 // Modules
 import { motion } from 'motion/react';
 import { MdOutlineArrowBackIosNew } from 'react-icons/md';
@@ -8,7 +10,8 @@ import Link from 'next/link';
 import Button from '@/components/general/Button/Button';
 import { BackgroundBeams } from '@/components/ui/background-beams';
 
-const PageNotFound = () => {
+const PageNotFound: React.FC = () => {
+  useDocumentTitle('Not Found');
   return (
     <div className="min-h-[100vh] w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white">
       <BackgroundBeams />

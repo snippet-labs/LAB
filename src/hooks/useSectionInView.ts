@@ -2,7 +2,6 @@
 
 // Hooks
 import { RefObject, useRef } from "react";
-
 // Modules
 import { useInView } from 'framer-motion';
 

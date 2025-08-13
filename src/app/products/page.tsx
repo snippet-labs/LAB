@@ -1,15 +1,19 @@
 'use client';
 
-import GyroCard from '@/components/general/GyroCard/GyroCard';
+// Hooks
+import { useSectionInView } from '@/hooks/useSectionInView';
+import { useFeatureFlag } from '@/hooks/useFeatureFlag';
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+// Modules
 import { BackgroundBeams } from '@/components/ui/background-beams';
 import { productDetails } from '@/data/productDetails';
-import { useFeatureFlag } from '@/hooks/useFeatureFlag';
 import { motion } from 'framer-motion';
-import { useSectionInView } from '@/hooks/useSectionInView';
 import { monotonFont } from '@/helpers/font';
+import GyroCard from '@/components/general/GyroCard/GyroCard';
 import UnderDevelopment from '@/components/general/UnderDevelopment/UnderDevelopment';
 
-const ProductPage = () => {
+const ProductPage: React.FC = () => {
+  useDocumentTitle('Our products');
   const { isPage } = useFeatureFlag();
   const { ref, isSectionInViewPort } = useSectionInView();
 
@@ -46,7 +50,12 @@ const ProductPage = () => {
           </motion.div>
         </div>
         {isPage.productPage ? (
-          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.6, duration: 1, ease: 'easeOut' }}
+            className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-6xl"
+          >
             {productDetails.map((product, index) => (
               <GyroCard
                 key={index}
@@ -55,9 +64,16 @@ const ProductPage = () => {
                 image={product.image}
               />
             ))}
-          </div>
+          </motion.div>
         ) : (
-          <UnderDevelopment />
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isSectionInViewPort ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.6, duration: 1, ease: 'easeOut' }}
+            className="mt-10 flex justify-center w-full"
+          >
+            <UnderDevelopment />
+          </motion.div>
         )}
       </div>
     </div>

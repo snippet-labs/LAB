@@ -17,7 +17,6 @@ const geistMono = Geist_Mono({
 
 // Metadata
 export const metadata: Metadata = {
-  title: 'Lab | Your next dream',
   description: 'From our labs for your dreams',
 };
 
