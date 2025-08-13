@@ -9,7 +9,7 @@ import { motion } from 'motion/react';
 import UnderDevelopment from '@/components/general/UnderDevelopment/UnderDevelopment';
 
 const ReleasesPage: React.FC = () => {
-  const footerLink = useFeatureFlag();
+  const { isFooterLink } = useFeatureFlag();
 
   return (
     <div className="min-h-[100vh] w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased text-white overflow-x-hidden">
@@ -27,7 +27,7 @@ const ReleasesPage: React.FC = () => {
         </span>
       </motion.div>
       <motion.div>
-        {footerLink.isFooterLink.isReleasesPage ? (
+        {isFooterLink.ReleasesPage ? (
           <></>
         ) : (
           <motion.div

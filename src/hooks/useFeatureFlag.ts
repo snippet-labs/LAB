@@ -1,18 +1,22 @@
-export const  useFeatureFlag= () => {
+export const useFeatureFlag = () => {
+
+  // Component feature flags
   const isComponent = {
-    newsLetter : false
+    newsLetter: false
   }
+  // Page feature flags
   const isPage = {
-    productPage : false,
+    productPage: false,
   };
+  // Footer feature flags
   const isFooterLink = {
-    isAboutPage: false,
-    isBlogPage: false,
-    isHelpPage: false,
-    isReleasesPage: false,
-    isStatusPage: false,
-    isTermsPage: false,
+    AboutPage: false,
+    BlogPage: false,
+    HelpPage: false,
+    ReleasesPage: false,
+    StatusPage: false,
+    TermsPage: false,
   }
 
- return {isComponent, isPage , isFooterLink};
+  return { isComponent, isPage, isFooterLink };
 }

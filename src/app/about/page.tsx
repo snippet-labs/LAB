@@ -27,7 +27,7 @@ const AboutPage: React.FC = () => {
         </span>
       </motion.div>
       <motion.div>
-        {isFooterLink.isAboutPage ? (
+        {isFooterLink.AboutPage ? (
           <></>
         ) : (
           <motion.div
