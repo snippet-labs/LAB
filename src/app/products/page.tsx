@@ -3,6 +3,7 @@
 // Hooks
 import { useSectionInView } from '@/hooks/useSectionInView';
 import { useFeatureFlag } from '@/hooks/useFeatureFlag';
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 // Modules
 import { BackgroundBeams } from '@/components/ui/background-beams';
 import { productDetails } from '@/data/productDetails';
@@ -12,6 +13,7 @@ import GyroCard from '@/components/general/GyroCard/GyroCard';
 import UnderDevelopment from '@/components/general/UnderDevelopment/UnderDevelopment';
 
 const ProductPage: React.FC = () => {
+  useDocumentTitle('Our products');
   const { isPage } = useFeatureFlag();
   const { ref, isSectionInViewPort } = useSectionInView();
 

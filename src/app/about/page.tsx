@@ -2,6 +2,7 @@
 
 // Hooks
 import { useFeatureFlag } from '@/hooks/useFeatureFlag';
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 // Modules
 import { monotonFont } from '@/helpers/font';
 import { BackgroundBeams } from '@/components/ui/background-beams';
@@ -9,6 +10,7 @@ import { motion } from 'framer-motion';
 import UnderDevelopment from '@/components/general/UnderDevelopment/UnderDevelopment';
 
 const AboutPage: React.FC = () => {
+  useDocumentTitle('About');
   const { isFooterLink } = useFeatureFlag();
 
   return (

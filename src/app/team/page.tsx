@@ -2,6 +2,7 @@
 
 // Hooks
 import { useSectionInView } from '@/hooks/useSectionInView';
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 // Modules
 import { BackgroundBeams } from '@/components/ui/background-beams';
 import { motion } from 'motion/react';
@@ -9,6 +10,7 @@ import { monotonFont } from '@/helpers/font';
 import TracingCard from '@/components/general/TracingCard/TracingCard';
 
 const TeamPage = () => {
+  useDocumentTitle('Our Team');
   const { ref, isSectionInViewPort } = useSectionInView();
 
   return (

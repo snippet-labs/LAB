@@ -1,13 +1,17 @@
 // app > page.tsx
 'use client';
 
+//Hooks
+import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+
 // Modules
 import Header from '@/components/section/Header/Header';
 import Knowus from '@/components/section/Knowus/Knowus';
 import Technology from '@/components/section/Technology/Technology';
-import Footer from '@/components/general/Footer';
 
 const HomePage = () => {
+  useDocumentTitle('Home');
+
   return (
     <>
       <section id="banner">
